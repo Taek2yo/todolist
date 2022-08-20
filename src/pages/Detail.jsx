@@ -12,5 +12,5 @@ function Detail () {
 
     )
 }
-
+// test 입니다
 export default Detail
