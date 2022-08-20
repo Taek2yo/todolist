@@ -51,15 +51,17 @@ function List({ todos, setTodos }) {          //todos와 setTodos를 부모컴�
       <h2 className="list-title">Done..! 🎉</h2>
       <div className="list-wrapper">
         {todos.map((todo) => {
-          if (todo.isDone) {
+            if (todo.isDone) {
             return (
-              <Todo
+            <div>
+            <Todo
                 todo={todo}
                 key={todo.id}
                 setTodos={setTodos}
                 onDeleteHanlder={onDeleteHanlder}
                 onEditHandler={onEditHandler}
               />
+            </div>    
             );
           } else {
             return null;

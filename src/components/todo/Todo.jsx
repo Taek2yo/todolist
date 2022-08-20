@@ -1,9 +1,11 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import "./style.css";
 
 function Todo({ todo, onDeleteHanlder, onEditHandler }) {
   return (
     <div className="todo-container">
+      <Link to="/detail" className="LearnMore">Learn More..</Link>
       <div>
         <h2 className="todo-title">{todo.title}</h2>
         <div>{todo.body}</div>

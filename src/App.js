@@ -9,7 +9,7 @@ function App() {
             <Route path="/" exact>
                 <TodoList />
             </Route>
-            <Route path="/detail">
+            <Route path="/detail/">
                 <Detail />
             </Route>
 
