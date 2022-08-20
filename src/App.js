@@ -1,9 +1,19 @@
 import React from "react";
+import {Route} from "react-router-dom"
 import TodoList from "./pages/TodoList";
+import Detail from "./pages/Detail";
 
-function App(){
+function App() {
     return (
-        <TodoList/>
+        <div>
+            <Route path="/" exact>
+                <TodoList />
+            </Route>
+            <Route path="/detail">
+                <Detail />
+            </Route>
+
+        </div>
     )
 }
 
