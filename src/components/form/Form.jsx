@@ -10,7 +10,6 @@ function Form({ setTodos, todos }) {
     isDone: false,
   };
 
-  console.log(todos);
 
   const [todo, setTodo] = useState(initialState);       // intialState의 상태가 컴포넌트 내부에서 바뀔수 있음.
   const onChangeHandler = (event) => {
